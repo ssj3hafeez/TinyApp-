@@ -15,5 +15,8 @@
     "url": "https://github.com/ssj3hafeez/TinyApp-/issues"
   },
   "homepage": "https://github.com/ssj3hafeez/TinyApp-#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
