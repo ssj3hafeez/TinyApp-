@@ -1,0 +1,19 @@
+{
+  "name": "tinyapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssj3hafeez/TinyApp-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssj3hafeez/TinyApp-/issues"
+  },
+  "homepage": "https://github.com/ssj3hafeez/TinyApp-#readme",
+  "description": ""
+}
