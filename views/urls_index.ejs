@@ -1,15 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <title></title>
+  <title>TinyApp: URLs</title>
 </head>
-<body style="font-size:20px; padding:50px;">
-    <% include partials/_header.ejs %>
+<body>
+    <header>
+    <%- include partials/_header.ejs %>
+    </header>
+    <br>
+      <a href="/urls/new">Create New TinyURL</a>
+  <br>
+  <ul>
+    <%for(let keys in urls){%>
+    <li><%= keys %>: <%= urls[keys] %></li>
+    <form method = "POST" action="/urls/<%= keys %>/delete">
+      <input type="submit" value="Delete">
+      <input type="submit" value="Edit" action="/urls/${shortURL}">
+  </form>
+  <%}%>
+  </ul>
 
-    <form method="POST" action="/urls/9sm5xK/delete">...</form>
 </body>
 </html>
 
